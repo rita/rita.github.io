@@ -40,9 +40,11 @@ header p {
 	align-items: center;
 	background-image: url(jumbotron-image.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	color: #ffffff;
-	height: 500px;
-	text-shadow: 0.25px 0.25px 0.25px #000000;
+	height: 600px;
+	text-shadow: 0.5px 0.5px 0.5px #000000;
 }
 
 .jumbotron h2 {
