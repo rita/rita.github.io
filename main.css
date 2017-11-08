@@ -6,7 +6,7 @@ h2 {
 	text-align: center;
 }
 
-p {
+header p {
 	text-align: center;
 	padding-left: 200px;
 	padding-right: 200px;
@@ -47,7 +47,7 @@ header p {
 	background-repeat: no-repeat;
 	background-position: center;
 	color: #ffffff;
-	height: 600px;
+	height: 650px;
 	text-shadow: 0.5px 0.5px 0.5px #000000;
 }
 
@@ -61,4 +61,13 @@ header p {
 .jumbotron h3 {
 	margin: 0 0 20px;
 	color: #fff;
+}
+
+.my-background {
+	text-align: center;
+}
+
+.my-background h2 {
+	text-shadow: 0.5px 0.5px 0.5px #000;
+	color: teal;
 }

@@ -1,0 +1,39 @@
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+	text-align: center;
+	font: 1em/1.5 Georgia, serif;
+	color: #333;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+h1 {
+	font-family: Bitter, Georgia, serif;
+	font-size: 2.25em;
+	padding: 0 1em;
+}
+
+.header {
+	padding: 10em 0 14em;
+
+	h1 {
+		font-style: italic;
+	}
+}
+
+.avatar {
+	@include box-shadow(0 0 0px 3px #ff, 0 0 0 4px #ccc, 0 4px 6px #333);
+	@include border-radius(50px);
+	width: 100px;
+	height: 100px;
+}
+
