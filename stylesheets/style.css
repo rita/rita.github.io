@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 4, ../sass/style.scss */
 .container-fluid {
-  font-family: Times New Roman, Comic Sans;
+  font-family: Helvetica;
 }
 
 /* line 8, ../sass/style.scss */
@@ -88,9 +88,9 @@ img {
 
 /* line 23, ../sass/style.scss */
 h1 {
-  font-family: Helvetica, Roboto, Bitter, Georgia, serif;
+  font-family: Bitter, Georgia, serif;
   font-size: 2.25em;
-  padding: 8em 4em;
+  padding: 7em 3em;
 }
 
 /* line 29, ../sass/style.scss */
