@@ -82,7 +82,7 @@ a {
 
 /* line 18, ../sass/style.scss */
 img {
-  max-width: 100%;
+  width: 40%;
   height: auto;
 }
 
@@ -90,7 +90,7 @@ img {
 h1 {
   font-family: Bitter, Georgia, serif;
   font-size: 2.25em;
-  padding: 7em 3em;
+  padding: 8em 3em;
 }
 
 /* line 29, ../sass/style.scss */
