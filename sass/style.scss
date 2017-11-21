@@ -1,6 +1,30 @@
 @import "compass/reset";
 @import "compass/css3";
 
+/* Create two equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 50%;
+}
+
+.column img {
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 800px) {
+    .column {
+        width: 100%;
+   }
+}
+
 .container-fluid {
 	font-family: Helvetica;
 }
@@ -17,7 +41,7 @@ a {
 
 img {
 	width: 40%;
-	height: auto;
+
 }
 
 h1 {
@@ -34,73 +58,4 @@ h1 {
 	}
 }
 
-.avatar {
-	@include box-shadow(0 0 0px 3px #ff, 0 0 0 4px #ccc, 0 4px 6px #333);
-	@include border-radius(50px);
-	width: 100px;
-	height: 100px;
-}
 
-.carousel {
-	position: relative;
-}
-
-.shots-container {
-	width: 100%;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-	position: relative;
-	padding: 1em 0; 
-}
-
-.shots {
-	overflow: hidden;
-	margin: 0;
-	padding: 0 2%;
-	/*
-	 * Shot width = 400px + 20px margin + 20px padding + 2px border
-	 * 442 * 10 (# of shots)
-	 */
-	width: 4420px;
-	min-height: 300px;
-
-	@media screen and (max-width: 450px) {
-		/*
-		 * Shot width = 300px + 20px margin + 20px padding + 2px border
-		 * 342 * 10 (# of shots)
-		 */
-		 width: 3420px; /* 340 * 10 */
-		 min-height: 250px;
-	}
-
-	li {
-		float: left;
-		width: 400px;
-		height: 300px;
-		margin: 0 10px;
-		padding: 10px;
-		background: #fff url(images/loading.gif) 100px 50% no-repeat;
-		border: 1px solid #ddd;
-		@include border-radius(3px);
-
-		@media screen and (max-width: 450px) {
-			width: 300px;
-			height: 225px;
-		}
-	}
-
-	.mask {
-		position: absolute;
-		top: 0;
-		width: 4%;
-		height: 100%;
-	}
-	.mask-left {
-		left: 0;
-		@include background( linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,0)) );
-	}
-	.mask-right {
-		right: 0;
-		@include background( linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1)) );
-	}
-}
