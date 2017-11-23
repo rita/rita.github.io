@@ -63,20 +63,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* Create two equal columns that floats next to each other */
-/* line 5, ../sass/style.scss */
-.column {
-  float: left;
-  width: 50%;
+/* line 4, ../sass/style.scss */
+.row {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 10, ../sass/style.scss */
+/* Create two equal columns that floats next to each other */
+/* line 11, ../sass/style.scss */
+.column {
+  float: left;
+  width: 49%;
+  margin: 4px;
+}
+
+/* line 17, ../sass/style.scss */
 .column img {
   width: 100%;
 }
 
 /* Clear floats after the columns */
-/* line 15, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 .row:after {
   content: "";
   display: table;
@@ -85,44 +93,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
-  /* line 23, ../sass/style.scss */
+  /* line 31, ../sass/style.scss */
   .column {
     width: 100%;
   }
 }
-/* line 28, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .container-fluid {
-  font-family: Helvetica;
   width: 100%;
   height: 100vh;
   margin: 0px;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
+.container-fluid h3 {
+  font-family: Oswald;
+  font-size: 2em;
+}
+
+/* line 47, ../sass/style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
   color: #333;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 img {
   width: 40%;
 }
 
-/* line 50, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 h1 {
   font-family: Bitter, Georgia, serif;
   font-size: 2.25em;
   padding: 7em 6em;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .header {
   padding: 8em 3em;
 }

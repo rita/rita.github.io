@@ -1,14 +1,22 @@
 @import "compass/reset";
 @import "compass/css3";
 
+.row {
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Create two equal columns that floats next to each other */
 .column {
 	float: left;
-	width: 50%;
+	width: 49%;
+	margin: 4px;
 }
 
 .column img {
     width: 100%;
+
 }
 
 /* Clear floats after the columns */
@@ -26,10 +34,14 @@
 }
 
 .container-fluid {
-	font-family: Helvetica;
 	width: 100%;
 	height: 100vh;
 	margin: 0px;	
+}
+
+.container-fluid h3 {
+	font-family: Oswald;
+	font-size: 2em;
 }
 
 body {
@@ -59,5 +71,7 @@ h1 {
 	padding: 8em 3em;
 
 }
+
+
 
 
