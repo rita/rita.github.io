@@ -107,35 +107,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 42, ../sass/style.scss */
 .container-fluid h3 {
-  font-family: Oswald;
-  font-size: 2em;
+  font-family: Open Sans;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0.5em;
 }
 
-/* line 47, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
   color: #333;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 img {
   width: 40%;
 }
 
-/* line 62, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 h1 {
-  font-family: Bitter, Georgia, serif;
+  font-family: Roboto, Georgia, serif;
   font-size: 2.25em;
   padding: 7em 6em;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .header {
   padding: 8em 3em;
+}
+
+/* line 74, ../sass/style.scss */
+.container-fluid h2 {
+  font-family: Open Sans;
+}
+
+/* line 78, ../sass/style.scss */
+.arrow {
+  width: 8%;
+  padding-bottom: 0.5em;
 }

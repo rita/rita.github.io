@@ -40,8 +40,10 @@
 }
 
 .container-fluid h3 {
-	font-family: Oswald;
-	font-size: 2em;
+	font-family: Open Sans;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-top: 0.5em;
 }
 
 body {
@@ -56,15 +58,12 @@ a {
 
 img {
 	width: 40%;
-
 }
 
 h1 {
-	font-family: Bitter, Georgia, serif;
+	font-family: Roboto, Georgia, serif;
 	font-size: 2.25em;
 	padding: 7em 6em;
-
-
 }
 
 .header {
@@ -72,6 +71,11 @@ h1 {
 
 }
 
+.container-fluid h2 {
+	font-family: Open Sans;
+}
 
-
-
+.arrow {
+	width: 8%;
+	padding-bottom: 0.5em;
+}
