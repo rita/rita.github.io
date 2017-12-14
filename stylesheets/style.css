@@ -63,7 +63,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 4, ../sass/style.scss */
+/* Add a black background color to the top navigation */
+/* line 5, ../sass/style.scss */
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  height: 8vh;
+  position: fixed;
+  width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+/* line 14, ../sass/style.scss */
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Open Sans;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Change the color of links on hover */
+/* line 28, ../sass/style.scss */
+.topnav a:hover {
+  color: #ddd;
+}
+
+/* line 32, ../sass/style.scss */
+.bottomnav {
+  height: 10vh;
+}
+
+/* line 36, ../sass/style.scss */
+.logo {
+  height: 6vh;
+  width: auto;
+  margin-left: 15px;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 46, ../sass/style.scss */
 .row {
   max-width: 1000px;
   margin-left: auto;
@@ -71,20 +118,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Create two equal columns that floats next to each other */
-/* line 11, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .column {
   float: left;
   width: 49%;
   margin: 4px;
 }
 
-/* line 17, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .column img {
   width: 100%;
 }
 
 /* Clear floats after the columns */
-/* line 23, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 .row:after {
   content: "";
   display: table;
@@ -93,62 +140,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
-  /* line 31, ../sass/style.scss */
+  /* line 73, ../sass/style.scss */
   .column {
     width: 100%;
   }
 }
-/* line 36, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .container-fluid {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   margin: 0px;
+  background-image: url(background.jpg);
+  background-size: cover;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .container-fluid h3 {
   font-family: Open Sans;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 0.5em;
+  color: purple;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
   color: #333;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 img {
   width: 40%;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 h1 {
   font-family: Roboto, Georgia, serif;
   font-size: 2.25em;
   padding: 7em 6em;
+  color: white;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .header {
   padding: 8em 3em;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .container-fluid h2 {
   font-family: Open Sans;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .arrow {
-  width: 8%;
-  padding-bottom: 0.5em;
+  height: 10vh;
+  width: auto;
 }

@@ -1,6 +1,48 @@
 @import "compass/reset";
 @import "compass/css3";
 
+/* Add a black background color to the top navigation */
+.topnav {
+	background-color: white;
+	overflow: hidden;
+	height: 8vh;
+	position: fixed;
+	width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	float: right;
+	color: black;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: Open Sans;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	color: #ddd;
+}
+
+.bottomnav {
+	height: 10vh;	
+}
+
+.logo {
+	height: 6vh;
+	width: auto;
+	margin-left: 15px;
+	float: left;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .row {
 	max-width: 1000px;
 	margin-left: auto;
@@ -35,8 +77,10 @@
 
 .container-fluid {
 	width: 100%;
-	height: 100vh;
-	margin: 0px;	
+	height: 90vh;
+	margin: 0px;
+	background-image: url(background.jpg);
+	background-size: cover;	
 }
 
 .container-fluid h3 {
@@ -44,6 +88,7 @@
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-top: 0.5em;
+	color: purple;
 }
 
 body {
@@ -64,6 +109,7 @@ h1 {
 	font-family: Roboto, Georgia, serif;
 	font-size: 2.25em;
 	padding: 7em 6em;
+	color: white;
 }
 
 .header {
@@ -76,6 +122,6 @@ h1 {
 }
 
 .arrow {
-	width: 8%;
-	padding-bottom: 0.5em;
+	height: 10vh;
+	width: auto;
 }
