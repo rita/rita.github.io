@@ -15,7 +15,7 @@
 	float: right;
 	color: black;
 	text-align: center;
-	padding: 15px;
+	padding: 25px;
 	text-decoration: none;
 	font-size: 17px;
 	font-family: Open Sans;
@@ -34,7 +34,7 @@
 }
 
 .logo {
-	height: 6vh;
+	height: 5vh;
 	width: auto;
 	margin-left: 15px;
 	float: left;
@@ -83,14 +83,6 @@
 	background-size: cover;	
 }
 
-.container-fluid h3 {
-	font-family: Open Sans;
-	font-size: 1.5em;
-	font-weight: bold;
-	margin-top: 0.5em;
-	color: purple;
-}
-
 body {
 	text-align: center;
 	font: 1em/1.5 Georgia, serif;
@@ -105,10 +97,17 @@ img {
 	width: 40%;
 }
 
-h1 {
+.container-fluid h1 {
 	font-family: Roboto, Georgia, serif;
-	font-size: 2.25em;
-	padding: 7em 6em;
+	font-size: 3em;
+	padding-top: 40vh;
+	color: white;
+}
+
+.container-fluid h2 {
+	font-family: Roboto, Georgia, serif;
+	font-size: 1.75em;
+	padding: 0px 10em;
 	color: white;
 }
 
