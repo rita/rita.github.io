@@ -54,11 +54,36 @@
 	float: left;
 	width: 49%;
 	margin: 4px;
+	position: relative;
 }
 
-.column img {
+.gallery img {
     width: 100%;
+    opacity: 1;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
 
+.middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+}
+
+.text {
+	background-color: black;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+
+.gallery:hover .img {
+	opacity: 0.3;
+}
+
+.gallery:hover .middle {
+	opacity: 1;
 }
 
 /* Clear floats after the columns */

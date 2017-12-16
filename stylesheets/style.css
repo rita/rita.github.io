@@ -123,15 +123,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   width: 49%;
   margin: 4px;
+  position: relative;
 }
 
-/* line 59, ../sass/style.scss */
-.column img {
+/* line 60, ../sass/style.scss */
+.gallery img {
   width: 100%;
+  opacity: 1;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/* line 68, ../sass/style.scss */
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+}
+
+/* line 74, ../sass/style.scss */
+.text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* line 81, ../sass/style.scss */
+.gallery:hover .img {
+  opacity: 0.3;
+}
+
+/* line 85, ../sass/style.scss */
+.gallery:hover .middle {
+  opacity: 1;
 }
 
 /* Clear floats after the columns */
-/* line 65, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 .row:after {
   content: "";
   display: table;
@@ -140,12 +170,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
-  /* line 73, ../sass/style.scss */
+  /* line 98, ../sass/style.scss */
   .column {
     width: 100%;
   }
 }
-/* line 78, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .container-fluid {
   width: 100%;
   height: 90vh;
@@ -154,24 +184,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 86, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
   color: #333;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 96, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 img {
   width: 40%;
 }
 
-/* line 100, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .container-fluid h1 {
   font-family: Roboto, Georgia, serif;
   font-size: 3em;
@@ -179,7 +209,7 @@ img {
   color: white;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .container-fluid h2 {
   font-family: Roboto, Georgia, serif;
   font-size: 1.75em;
@@ -187,17 +217,17 @@ img {
   color: white;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .header {
   padding: 8em 3em;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .container-fluid h2 {
   font-family: Open Sans;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .arrow {
   height: 10vh;
   width: auto;
