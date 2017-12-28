@@ -8,6 +8,7 @@
 	height: 8vh;
 	position: fixed;
 	width: 100%;
+	z-index: 1;
 }
 
 /* Style the links inside the navigation bar */
@@ -63,6 +64,7 @@
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    z-index: -2;
 }
 
 .middle {
