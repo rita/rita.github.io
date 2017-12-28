@@ -23,11 +23,12 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+    transition: .5s ease;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-	color: #ddd;
+	opacity: 0.1;
 }
 
 .bottomnav {
@@ -42,6 +43,11 @@
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.logo:hover {
+	opacity: 0.1;
+	transition: .5s ease;
 }
 
 .row {

@@ -87,20 +87,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  transition: .5s ease;
 }
 
 /* Change the color of links on hover */
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .topnav a:hover {
-  color: #ddd;
+  opacity: 0.1;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .bottomnav {
   height: 10vh;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .logo {
   height: 5vh;
   width: auto;
@@ -111,7 +112,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transform: translateY(-50%);
 }
 
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
+.logo:hover {
+  opacity: 0.1;
+  transition: .5s ease;
+}
+
+/* line 53, ../sass/style.scss */
 .row {
   max-width: 1000px;
   margin-left: auto;
@@ -119,7 +126,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Create two equal columns that floats next to each other */
-/* line 54, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
 .column {
   float: left;
   width: 49%;
@@ -127,7 +134,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 .gallery img {
   width: 100%;
   opacity: 1;
@@ -137,14 +144,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: -2;
 }
 
-/* line 70, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .text {
   background-color: black;
   color: white;
@@ -152,18 +159,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 16px 32px;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .gallery:hover .img {
   opacity: 0.3;
 }
 
-/* line 87, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 .gallery:hover .middle {
   opacity: 1;
 }
 
 /* Clear floats after the columns */
-/* line 92, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .row:after {
   content: "";
   display: table;
@@ -172,12 +179,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
-  /* line 100, ../sass/style.scss */
+  /* line 106, ../sass/style.scss */
   .column {
     width: 100%;
   }
 }
-/* line 105, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .container-fluid {
   width: 100%;
   height: 90vh;
@@ -186,24 +193,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 113, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
   color: #333;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 img {
   width: 40%;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .container-fluid h1 {
   font-family: Roboto, Georgia, serif;
   font-size: 3em;
@@ -211,7 +218,7 @@ img {
   color: white;
 }
 
-/* line 134, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .container-fluid h2 {
   font-family: Roboto, Georgia, serif;
   font-size: 1.75em;
@@ -219,17 +226,17 @@ img {
   color: white;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .header {
   padding: 8em 3em;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .container-fluid h2 {
   font-family: Open Sans;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
 .arrow {
   height: 10vh;
   width: auto;
