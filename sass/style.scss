@@ -9,22 +9,37 @@
 	position: fixed;
 	width: 100%;
 	z-index: 1;
+
+	img {
+	max-width: 65%;
+	max-height: 65%;
+	width: auto;
+	padding: 12px;
+	float: left;
+	position: relative;
+	}
+
+	.logo:hover {
+	opacity: 0.1;
+	transition: .5s ease;
+	}
+
+	/* Style the links inside the navigation bar */
+	.links a {
+		float: right;
+		color: black;
+		text-align: center;
+		padding: 20px;
+		text-decoration: none;
+		font-size: 17px;
+		font-family: Open Sans;
+		position: relative;
+	    transition: .5s ease;
+	    overflow: auto;
+	}
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-	float: right;
-	color: black;
-	text-align: center;
-	padding: 25px;
-	text-decoration: none;
-	font-size: 17px;
-	font-family: Open Sans;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-    transition: .5s ease;
-}
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -35,20 +50,11 @@
 	height: 10vh;	
 }
 
-.logo {
-	height: 5vh;
-	width: auto;
-	margin-left: 15px;
-	float: left;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+.topnav .logo {
+
 }
 
-.logo:hover {
-	opacity: 0.1;
-	transition: .5s ease;
-}
+
 
 .row {
 	max-width: 1000px;
@@ -122,10 +128,6 @@ body {
 	color: #333;
 }
 
-a {
-	text-decoration: none;
-}
-
 img {
 	width: 40%;
 }
@@ -146,7 +148,6 @@ img {
 
 .header {
 	padding: 8em 3em;
-
 }
 
 .container-fluid h2 {

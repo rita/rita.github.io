@@ -72,53 +72,48 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: fixed;
   width: 100%;
   z-index: 1;
+  /* Style the links inside the navigation bar */
 }
-
-/* Style the links inside the navigation bar */
-/* line 15, ../sass/style.scss */
-.topnav a {
+/* line 13, ../sass/style.scss */
+.topnav img {
+  max-width: 65%;
+  max-height: 65%;
+  width: auto;
+  padding: 12px;
+  float: left;
+  position: relative;
+}
+/* line 22, ../sass/style.scss */
+.topnav .logo:hover {
+  opacity: 0.1;
+  transition: .5s ease;
+}
+/* line 28, ../sass/style.scss */
+.topnav .links a {
   float: right;
   color: black;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
   text-decoration: none;
   font-size: 17px;
   font-family: Open Sans;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   transition: .5s ease;
+  overflow: auto;
 }
 
 /* Change the color of links on hover */
-/* line 30, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .topnav a:hover {
   opacity: 0.1;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .bottomnav {
   height: 10vh;
 }
 
-/* line 38, ../sass/style.scss */
-.logo {
-  height: 5vh;
-  width: auto;
-  margin-left: 15px;
-  float: left;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* line 48, ../sass/style.scss */
-.logo:hover {
-  opacity: 0.1;
-  transition: .5s ease;
-}
-
-/* line 53, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .row {
   max-width: 1000px;
   margin-left: auto;
@@ -126,7 +121,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* Create two equal columns that floats next to each other */
-/* line 60, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .column {
   float: left;
   width: 49%;
@@ -134,7 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: relative;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .gallery img {
   width: 100%;
   opacity: 1;
@@ -144,14 +139,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: -2;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .text {
   background-color: black;
   color: white;
@@ -159,18 +154,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 16px 32px;
 }
 
-/* line 89, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .gallery:hover .img {
   opacity: 0.3;
 }
 
-/* line 93, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .gallery:hover .middle {
   opacity: 1;
 }
 
 /* Clear floats after the columns */
-/* line 98, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .row:after {
   content: "";
   display: table;
@@ -179,12 +174,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
-  /* line 106, ../sass/style.scss */
+  /* line 112, ../sass/style.scss */
   .column {
     width: 100%;
   }
 }
-/* line 111, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .container-fluid {
   width: 100%;
   height: 90vh;
@@ -193,24 +188,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-size: cover;
 }
 
-/* line 119, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 body {
   text-align: center;
   font: 1em/1.5 Georgia, serif;
   color: #333;
 }
 
-/* line 125, ../sass/style.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 129, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 img {
   width: 40%;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .container-fluid h1 {
   font-family: Roboto, Georgia, serif;
   font-size: 3em;
@@ -218,7 +208,7 @@ img {
   color: white;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .container-fluid h2 {
   font-family: Roboto, Georgia, serif;
   font-size: 1.75em;
@@ -226,17 +216,17 @@ img {
   color: white;
 }
 
-/* line 147, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .header {
   padding: 8em 3em;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .container-fluid h2 {
   font-family: Open Sans;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .arrow {
   height: 10vh;
   width: auto;
