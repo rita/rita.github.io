@@ -96,7 +96,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 20px;
   text-decoration: none;
   font-size: 17px;
-  font-family: Open Sans;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   transition: .5s ease;
   overflow: auto;
@@ -202,7 +202,7 @@ img {
 
 /* line 135, ../sass/style.scss */
 .container-fluid h1 {
-  font-family: Roboto, Georgia, serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   padding-top: 40vh;
   color: white;
@@ -210,7 +210,7 @@ img {
 
 /* line 142, ../sass/style.scss */
 .container-fluid h2 {
-  font-family: Roboto, Georgia, serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.75em;
   padding: 0px 10em;
   color: white;
@@ -222,11 +222,12 @@ img {
 }
 
 /* line 153, ../sass/style.scss */
-.container-fluid h2 {
-  font-family: Open Sans;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-/* line 157, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 .arrow {
   height: 10vh;
   width: auto;

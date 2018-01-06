@@ -32,7 +32,7 @@
 		padding: 20px;
 		text-decoration: none;
 		font-size: 17px;
-		font-family: Open Sans;
+		font-family: 'Montserrat', sans-serif;
 		position: relative;
 	    transition: .5s ease;
 	    overflow: auto;
@@ -133,14 +133,14 @@ img {
 }
 
 .container-fluid h1 {
-	font-family: Roboto, Georgia, serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
 	padding-top: 40vh;
 	color: white;
 }
 
 .container-fluid h2 {
-	font-family: Roboto, Georgia, serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.75em;
 	padding: 0px 10em;
 	color: white;
@@ -150,8 +150,9 @@ img {
 	padding: 8em 3em;
 }
 
-.container-fluid h2 {
-	font-family: Open Sans;
+.dropdown {
+	float: left;
+	overflow: hidden;
 }
 
 .arrow {
