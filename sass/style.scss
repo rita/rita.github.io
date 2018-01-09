@@ -50,10 +50,6 @@
 	height: 10vh;	
 }
 
-.topnav .logo {
-
-}
-
 
 
 .row {
@@ -87,6 +83,7 @@
 
 .text {
 	background-color: black;
+	font-family: 'Montserrat', sans-serif; 
 	color: white;
 	font-size: 16px;
 	padding: 16px 32px;
@@ -110,7 +107,9 @@
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 800px) {
     .column {
-        width: 100%;
+        width: 80%;
+        padding: 0 4.5em;
+        position: relative;
    }
 }
 
@@ -125,7 +124,6 @@
 body {
 	text-align: center;
 	font: 1em/1.5 Georgia, serif;
-	color: #333;
 }
 
 img {
@@ -134,25 +132,20 @@ img {
 
 .container-fluid h1 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 3em;
+	font-size: 3vmax;
 	padding-top: 40vh;
 	color: white;
 }
 
 .container-fluid h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.75em;
+	font-size: 1.75vmax;
 	padding: 0px 10em;
 	color: white;
 }
 
 .header {
 	padding: 8em 3em;
-}
-
-.dropdown {
-	float: left;
-	overflow: hidden;
 }
 
 .arrow {
