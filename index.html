@@ -1,70 +1,214 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-	<head>
-		<title>Rita Young</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="stylesheets/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-		<link rel="icon" href="images/logo.png">
-	</head>
+<head>
 
-	<body>
-		<div class="topnav" id="myTopnav">
-			<a href="" class="logo"><img src="images/logo.png"></a>
-			<div class="links">
-				<a href="mailto:ryoung80@gatech.edu">Contact</a>
-				<a href="Resume.pdf" target="_blank">Resume</a>
-				<a href="#portfolio">Portfolio</a>
-			</div>
-		</div>
-		<div class="container-fluid">
+  <meta charset="utf-8">
+  <title>Rita Young</title>
+  <meta name="description" content="Thomsoon version 2 with classic menu navigation - Portfolio with grid HTML5 and CSS3 modern simplicity style template. Check my portfolio. Download free now with file Photoshop! ">
+  <meta name="keywords" content="amore, simplicity, theme, html5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="thomsoon.com">
+  <link rel="icon" type="image/png" href="img/logo/logo.png" />
 
-			<h1>Hello, I'm Rita.</h1>
-			<h2>I'm an undergraduate student at Georgia Tech studying communication and design.</h2>
+<!--Style-->
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-responsive.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+
+<!--Preloader-->
+
+<div class="preloader" id="preloader">
+    <div class="item">
+      <div class="spinner">
+      </div>
+    </div>
+</div>
+
+<div class="opacity-nav">
+
+        <div class="menu-index" id="buttons" style="z-index:999999">
+        <i class="fa  fa-close"></i>
+        </div>
+
+    <ul class="menu-fullscreen">
+      <li><a class="ajax-link" href="single.html">Home</a></li>
+      <li><a class="ajax-link" href="projects.html">Projects</a></li>
+      <li><a class="ajax-link" href="about-us.html">Resume</a></li>
+      <li><a class="ajax-link" href="contact.html">Contact</a></li>
+    </ul>
+
+</div>
 
 
-		</div>
-		<a name="portfolio"></a>
-		<div class="bottomnav" id="myBottomnav">
-			<img class="arrow" src="images/arrow.gif">
-		</div>
+  <!--Header-->
+  <header id="fullscreen">
+    
+      <div class="logo" id="full" style="display:none;"><a class="ajax-link" href="index.html">RITA YOUNG</a></div>
+      
+        <div class="menu-index" style="display:none;" id="button">
+        <i class="fa fa-bars"></i>
+        </div>
+
+  </header>
 
 
-		<div class="portfolio">
-			<div class="row">
+<!--Header-->
+<header class="boxed" id="header-white">
 
-				<div class="column">
-					<div class="gallery">
-						<div class="middle">
-							<div class="text">Poster Design</div>
-						</div>
-						<img src="images/poster.jpg">
-					</div>
-					<div class="gallery">
-						<div class="middle">
-							<div class="text">Branding and Flyer Design</div>
-						</div>
-						<img src="images/flyer.jpg">
-					</div>
-				</div>
+  <div class="header-margin">
+  
+    <div class="logo"><a class="ajax-link" href="index.html">RITA YOUNG</a></div>
+    <ul class="header-nav">
+      <li><a class="ajax-link" href="#">Projects</a>
+        <ul>
+          <li><a class="ajax-link" href="#">Projects</a></li> 
+          <li><a class="ajax-link" href="#">Single project</a></li> 
+          <li><a class="ajax-link" href="#">Single project fullscreen</a></li> 
+                   
+        </ul>
+      
+      </li>
+      
+      <li><a class="ajax-link" href="#">Resume</a></li>
+      <li><a class="ajax-link" href="#">Contact</a></li>
+    </ul>
+    
+  </div>
 
-				<div class="column">
-					<div class="gallery">
-						<div class="middle">
-							<div class="text">Print Design</div>
-						</div>
-						<img src="images/sia.jpg">
-					</div>
-					<div class="gallery">
-						<div class="middle">
-							<div class="text">Earth Day Design Contest</div>
-						</div>
-						<img src="images/EarthDay.jpg">
-					</div>		
-				</div>
+</header>
 
-			</div>
-		</div>
-	</body>
+<div class="clear"></div>
+
+<!--Content-->
+
+<div class="content" id="ajax-content">
+
+
+      <div class="text-intro" id="site-type">
+
+        <h1>Hello</h1>
+  <!--      <h1 class="typewrite"><span>Test</span></h1> -->
+        <p>I'm an undergraduate student at Georgia Tech studying communication and design.</p>
+
+      </div>
+
+
+<!--Portfolio grid-->
+
+<ul class="portfolio-grid" id="portfolio-sidebar">
+
+  
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/aso.png">
+      <a class="ajax-link" href="project1.html">  
+        <div class="grid-hover">
+          <h1>Atlanta Symphony Orchestra</h1>
+          <p>UI Design</p>
+        </div>
+      </a>  
+  </li>
+
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/NFfront.png">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>NF</h1>
+          <p>Web Design</p>
+        </div>
+      </a>      
+  </li>    
+  
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/flyer.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Mayuri Yoga</h1>
+          <p>Branding/Print Design</p>
+        </div>
+      </a>      
+  </li>  
+  
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/sia1.jpg">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Sia</h1>
+          <p>Print Design</p>
+        </div>
+      </a>      
+  </li>    
+
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/EarthDay.png">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Earth Day 2018</h1>
+          <p>Design Contest Entry</p>
+        </div>
+      </a>      
+  </li>    
+
+  <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+    <img src="img/portfolio/nf6.png">
+      <a class="ajax-link" href="#">  
+        <div class="grid-hover">
+          <h1>Album Cover Project</h1>
+          <p>Graphic Design</p>
+        </div>
+      </a>      
+  </li>  
+
+</ul>
+
+</div>
+
+
+
+
+
+<!--Footer-->
+
+<footer id="footer-box">
+
+  <div class="footer-margin">
+   
+  <div class="copyright" id="footer-left">© Copyright 2018 Rita Young. Theme by Thomsoon.com</div>
+  
+  </div>
+
+
+</footer>
+
+
+<!--Scripts-->
+
+  <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="js/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="js/typed.js" type="text/javascript"></script>
+  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>  
+  <script src="js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
+  <script src="js/jquery.jkit.1.2.16.min.js"></script>
+  <script src="js/script.js" type="text/javascript"></script>
+
+	<script>
+    $('#button, #buttons').on('click', function() {
+      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+    // Animation complete.
+    });
+  </script>
+
+</body>
 </html>
