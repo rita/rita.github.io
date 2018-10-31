@@ -1,86 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rita Young</title>
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- This is actually not Squarespace, just my first Bootstrap project. -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- // Intro -->
-    <header id="about">
-        <a href="resume.pdf" class="btn download" download>Download PDF</a>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#work">Work Experience</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="content-wrap">
-            <img class="profile-img col-narrow" src="images/rita-young.jpg" alt="Rita Young">
-            <div class="col-wide">
-                <h1>Rita Young</h1>
-                <h2>Undergraduate Student</h2>
-                <p>I'm a senior at Georgia Tech studying communication and design. I graduate May 2020 with a Bachelor of Science in Literature, Media, and Communication with concentrations in Interaction Design and Science, Technology, & Culture. My primary areas of focus are UX Design and web development.</p>
-            </div>
+    <link href="https://fonts.googleapis.com/css?family=Chivo:400,400i,900" rel="stylesheet">
+    <title>Rita Young</title>
+  </head>
+  <body>
+    <!--navigation-->
+    <div class="container">
+      <nav class="navbar navbar-light navbar-expand-lg">
+        <div>
+            <a class="navbar-brand" href="#">Rita Young</a>
         </div>
-    </header>
-    
-    <main> 
-        <!-- // Work Experience -->
-        <section id="work" class="work">
-            <div class="content-wrap">
-                <h2>Work Experience</h2>
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">Work</a>
+            <a class="nav-item nav-link" href="#">Resume</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+        </ul>
+      </nav>
+    </div>
 
-                <div class="col-narrow">
-                    <h3>Pharmacy Technician</h3>
-                    <p class="uppercase">Kroger</p>
-                    <p>January 2017 to August 2018</p>
-                </div>
-                <div class="col-wide job-description">
-                    <p>Responsibilities:</p>
-                    
-                    <ul>
-                        <li>Filled prescriptions in a fast-paced environment</li>
-                        <li>Provided customer service to patients picking up medications</li>
-                        <li>Assisted pharmacist in data entry and product-dispensing</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- // Education -->
-        <section id="education" class="education">
-            <div class="content-wrap">
-                <h2>Education</h2>
-
-                <!-- School details: copy this whole block to add more schools. -->
-                <h3>Georgia Institute of Technology, August 2015 to Present</h3>
-                <p>Candidate for Bachelor of Science in Literature, Media, and Communication</p>
-                
-                <!-- Add as many paragraphs as you need. -->
-                <p>Concentrations in Interaction Design and Science, Technology, & Culture</p>
-                <!-- End of school details. -->
-            </div>
-        </section>
-    </main>
-    
-    <!-- // Footer & contact info -->
-    <footer id="contact">
-        <div class="content-wrap">
-            <h2>Let's Keep in Touch!</h2>
-            
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <div class="contact-info">
-                <a href="mailto:ryoung80@gatech.edu"><i class="fas fa-envelope"></i></a>
-                <a href="http://ritayoung.xyz" target="_blank"><i class="fas fa-globe-americas"></i></a>
-            </div>
-
-            <p>Copyright 2018 by Rita Young</p>
+    <!--image gallery-->
+    <div class="container">
+      <div class="row">
+        <div class="row">
+          <div class="thumbnail col-lg-6">
+            <img src="images/project-1.jpg" class="img-fluid"/>
+          </div>
+          <div class="thumbnail col-lg-6">
+            <img src="images/project-2.jpg" class="img-fluid"/>
+          </div>
         </div>
-    </footer>
-</body>
+        <div class="row">
+          <div class="thumbnail col-lg-6">
+            <img src="images/project-3.jpg" class="img-fluid"/>
+          </div>
+          <div class="thumbnail col-lg-6">
+            <img src="images/project-4.jpg" class="img-fluid"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="thumbnail col-lg-6">
+            <img src="images/project-5.jpg" class="img-fluid"/>
+          </div>
+          <div class="thumbnail col-lg-6">
+            <img src="images/project-6.jpg" class="img-fluid"/>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>
