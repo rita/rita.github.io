@@ -9,3 +9,8 @@ a {
 .navbar {
 	margin: 30px 0;
 }
+
+.contact-link {
+	color: rgb(0,5,100);
+	border-style: solid;
+}
