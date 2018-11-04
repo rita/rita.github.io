@@ -14,16 +14,22 @@
   </head>
   <body>
     <!--navigation-->
-    <div class="container">
+		<div class="container">
       <nav class="navbar navbar-light navbar-expand-lg">
         <div>
             <a class="navbar-brand" href="index.html">Rita Young</a>
         </div>
-        <ul class="navbar-nav ml-auto">
-            <a class="nav-item nav-link" href="index.html">Work</a>
-            <a class="nav-item nav-link" href="resume.pdf" target="_blank">Resume</a>
-            <a class="nav-item nav-link active" href="contact.html">Contact</a>
-        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuItems">
+          <ul class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="index.html">Work</a>
+              <a class="nav-item nav-link" href="resume.pdf" target="_blank">Resume</a>
+              <a class="nav-item nav-link active" href="contact.html">Contact</a>
+          </ul>
+        </div>
+
       </nav>
     </div>
 
@@ -34,7 +40,7 @@
 						<a class="contact-link" href="mailto:ryoung80@gatech.edu">EMAIL</a>
 					</div>
 					<div class="d-flex justify-content-center">
-						<a class="contact-link" href="https://github.com/rita">GITHUB</a>
+						<a class="contact-link" href="https://github.com/rita" target="_blank">GITHUB</a>
 					</div>
 
 				</div>
@@ -42,7 +48,7 @@
 					<p>
 						I'm a senior at Georgia Tech studying communication and design.
 						I graduate May 2020 with a Bachelor of Science in Literature, Media, and Communication with concentrations in Interaction Design and Science, Technology, & Culture.
-						My primary areas of focus are UX Design and web development.
+						My primary areas of focus are UI Design and web development.
 					</p>
 				</div>
 			</div>

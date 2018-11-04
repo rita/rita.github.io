@@ -2,6 +2,10 @@
 	margin-bottom: 30px;
 }
 
+.thumbnail:hover {
+	
+}
+
 a {
 	font-family: 'Chivo', sans-serif;
 }
@@ -11,6 +15,16 @@ a {
 }
 
 .contact-link {
+	border: 1px solid rgb(0,5,100);
 	color: rgb(0,5,100);
-	border-style: solid;
+	text-align: center;
+	width: 150px;
+	padding: 8px;
+	margin: 10px;
+}
+
+.contact-link:hover {
+	text-decoration: none;
+	background: rgb(0,5,100);
+	color: white;
 }
