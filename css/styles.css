@@ -9,7 +9,7 @@
 	left: 0;
 	right: 0;
 	height: 100%;
-	max-width: 560px;
+	width: calc(100% - 15px);
 	background-color: #FFFFFF;
 	opacity: 0;
 	transition: .5s ease;
