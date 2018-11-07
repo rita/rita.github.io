@@ -2,8 +2,34 @@
 	margin-bottom: 30px;
 }
 
-.thumbnail:hover {
-	
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	max-width: 560px;
+	background-color: #FFFFFF;
+	opacity: 0;
+	transition: .5s ease;
+	display: table;
+}
+
+.text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #000000;
+}
+
+.item-description {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.thumbnail:hover .overlay {
+	opacity: 1;
 }
 
 a {
