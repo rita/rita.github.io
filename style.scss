@@ -1,0 +1,86 @@
+$font-stack: 'Spinnaker', sans-serif;
+$primary-color: #0E281E;
+$secondary-color: #A1BDC2;
+$background: rgb(218, 243, 247);
+
+a, p, h1, h2, h3, h4, h5, h6 {
+	font-family: $font-stack;
+}
+
+.jumbotron {
+	height: 100vh;
+	background-image: url(images/background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#logo {
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.navbar {
+	position: relative;
+	top: 40vh;
+
+	.nav-link {
+			display: inline;
+			text-align: center;
+			color: $secondary-color;
+		}
+		.active, a:hover {
+			color: $primary-color;
+		}
+}
+
+.certifications {
+	text-align: center;
+}
+
+.container, .container-fluid {
+	padding-bottom: 30px;
+}
+
+.header {
+	text-align: center;
+	color: $primary-color;
+	padding: 30px 0 15px 0;
+}
+
+.alt-background {
+	background-color: $background;
+}
+
+.card-img {
+	border-radius: 50%;
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-title, .card-text {
+	text-align: center;
+
+}
+
+.card-title {
+	color: $primary-color;
+	padding-top: 30px;
+}
+
+.card-text {
+	padding: 0 30px 30px 30px;
+}
+
+.card {
+	background-color: transparent;
+	border: none;
+}
+
+// div {
+// 	border:black solid 1px;
+// }
