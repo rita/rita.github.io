@@ -1,0 +1,56 @@
+.thumbnail {
+	margin-bottom: 30px;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 95%;
+	background-color: #FFFFFF;
+	opacity: 0;
+	transition: .5s ease;
+	display: table;
+}
+
+.text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #000000;
+}
+
+.item-description {
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.thumbnail:hover .overlay {
+	opacity: 1;
+}
+
+a {
+	font-family: 'Chivo', sans-serif;
+}
+
+.navbar {
+	margin: 30px 0;
+}
+
+.contact-link {
+	border: 1px solid rgb(0,5,100);
+	color: rgb(0,5,100);
+	text-align: center;
+	width: 150px;
+	padding: 8px;
+	margin: 10px;
+}
+
+.contact-link:hover {
+	text-decoration: none;
+	background: rgb(0,5,100);
+	color: white;
+}
