@@ -1,0 +1,77 @@
+a, p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Spinnaker", sans-serif;
+}
+
+.jumbotron {
+  height: 100vh;
+  background-image: url('images/mayuri-yoga/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#logo {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.navbar {
+  position: relative;
+  top: 40vh;
+}
+.navbar .nav-link {
+  display: inline;
+  text-align: center;
+  color: #A1BDC2;
+}
+.navbar .active, .navbar a:hover {
+  color: #0E281E;
+}
+
+.certifications {
+  text-align: center;
+}
+
+.container, .container-fluid {
+  padding-bottom: 30px;
+}
+
+.header {
+  text-align: center;
+  color: #0E281E;
+  padding: 30px 0 15px 0;
+}
+
+.alt-background {
+  background-color: #daf3f7;
+}
+
+.card-img {
+  border-radius: 50%;
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-title, .card-text {
+  text-align: center;
+}
+
+.card-title {
+  color: #0E281E;
+  padding-top: 30px;
+}
+
+.card-text {
+  padding: 0 30px 30px 30px;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */
