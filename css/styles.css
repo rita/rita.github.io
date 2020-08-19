@@ -1,79 +1,137 @@
-.thumbnail {
-	margin-bottom: 30px;
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+body {
+	background-color: black;
+}
+/*
+div {
+	border: pink 1px solid;
+} */
+
+a, p, h1, h2, h3, h4, h5, h6, i, b, ol, ul {
+	color: white;
+	font-family: 'Nunito', sans-serif;
 }
 
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 95%;
-	background-color: #FFFFFF;
-	opacity: 0;
-	transition: .5s ease;
-	display: table;
-}
-
-.text {
-	display: table-cell;
-	vertical-align: middle;
+.footer {
 	text-align: center;
-	color: #000000;
 }
 
-.item-description {
-	text-transform: uppercase;
-	font-weight: 300;
+.container {
+	padding: 30px 0 30px 0;
 }
 
-.thumbnail:hover .overlay {
-	opacity: 1;
+.main-gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
-a, p, h1, h2, h3, h4, h5, h6 {
-	font-family: 'Chivo', sans-serif;
+.description {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
 }
 
-.project-title {
-	margin-top: 15px;
+.link {
+	text-decoration: underline;
+	text-decoration-color: grey;
 }
 
-.navbar, .nav {
-	margin: 30px 0;
-}
-
-.nav-link {
-	color: lightgrey;
-}
-
-.active, .active:hover, .nav-link:hover {
-	color: black;
-}
-
-.link-button {
-	border: 1px solid rgb(0,5,100);
-	color: rgb(0,5,100);
-	text-align: center;
-	width: 150px;
-	padding: 8px;
-	margin: 10px;
-}
-
-.link-button:hover {
-	text-decoration: none;
-	background: rgb(0,5,100);
+.link:hover {
+	text-decoration-color: white;
 	color: white;
 }
 
-#resume-button {
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	width: 200px;
+.project-description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
-h5 {
-	margin-top: 30px;
+.graphic-design-gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 60px;
+	padding: 0 60px 0 60px;
+}
+
+.graphic-design-gallery img {
+	object-fit: cover;
+	height: 50vh;
+	width: 50vw;
+	opacity: 80%;
+}
+
+.graphic-design-gallery img:hover {
+	opacity: 100;
+}
+
+.portfolio-preview {
+	position: relative;
+}
+
+.portfolio-title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #000000;
+
+	/* position the text centrally */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	/* typographic styles */
+	text-decoration: none;
+	color: #FFFFFF;
+	text-decoration-color: #FFFFFF;
+
+	/* hide the title by default */
+	opacity: 0;
+	transition: opacity .5s;
+}
+
+.gd-title {
+	opacity: 1;
+	background: none;
+	transition: .5s;
+}
+
+.portfolio-preview:hover .gd-title {
+	background: #000000;
+}
+
+.portfolio-preview:hover .portfolio-title {
+	opacity: 0.8;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-decoration-color: #FFFFFF;
+}
+
+.card {
+	background-color: #000000;
+}
+
+#resume-button {
+	padding: 10px 0;
+}
+
+#resume-button:hover {
+	color: white;
+}
+
+
+.footer-nav {
+	margin: 30px 0;
 }

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="images/logo.png" rel="icon" type="image/gif">
+    <title>Rita Young</title>
+  </head>
+  <body>
+    <!--navigation-->
+    <div class="container">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div>
+            <a class="navbar-brand" href="index.html">Rita Young</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuItems">
+          <ul class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="index.html">Work</a>
+              <a class="nav-item nav-link" href="resume.html">Resume</a>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+		<!--project details-->
+		<div class="container">
+			<img src="images/pre2.png" style="width:100%"/>
+		</div>
+
+    <div class="container">
+      <h2 class="project-title">Pureple</h2>
+      <h5>UI/UX Design</h5>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h4 class="card-title details">Duration</h4>
+            <p class="card-text details">3 weeks</p>
+          </div>
+        </div>
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h4 class="card-title details">Skills</h4>
+            <p class="card-text details">
+            <ol>
+              <li>UX Analysis</li>
+              <li>Wireframing</li>
+              <li>Visual Design</li>
+            </ol>
+            </p>
+          </div>
+        </div>
+        <div class="card col-lg-4">
+          <div class="card-body">
+            <h4 class="card-title details">Tools</h4>
+            <p class="card-text details">Sketch</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>
+        I started this project in the summer of 2019 between semesters at Georgia Tech. Because I had little experience with UX concepts and wanted to have more practice outside of what I was doing in my internship (which was mostly graphic/visual design work), I picked up <i>The Elements of User Experience</i> by Jesse James Garrett during my lunch breaks and started thinking about how I could improve my work with a better understanding of user-centered design.
+      </p>
+      <p>
+        I decided to study and redesign an existing app rather than create an app concept from scratch. Because I had no design or UX mentor at the time, it was easier for me to see and apply the concepts I read about when I had a launched product already in front of me. I didn't have to worry about stakeholders or my GPA being affected by this project; I was free to investigate the strategy behind every design decision and build upon an already established framework of information and content. But best of all, it gave me the opportunity to analyze and learn from other people's mistakes.
+      </p>
+      <p>
+        I did not expect this to be a perfect case study; I was unable to test my final design and my user research was limited to the reviews people left in the App Store. I admittedly still lacked a lot of knowledge and experience -- but it was a start. What began as a passion project fueled by my interest in fashion (and frustration with picking outfits for work in the morning) turned into an opportunity to expand my skillset and get myself thinking about design on more than just an aesthetic level.
+      </p>
+      <h3>UX Analysis</h3>
+      <p>
+        <b>Pureple</b> is an app that digitizes your wardrobe -- you upload pictures of your clothes, input information about them, and it can generate outfits based on the categories the clothes are sorted into.
+      </p>
+      <h5>Product Objectives and User Needs</h5>
+      <p>
+        The app seems to have two main use cases:
+        </p>
+        <ol>
+          <li>
+            A <b>digital catalog</b> of the user's closet
+          </li>
+          <li>
+            An <b>outfit generator</b> and organizer
+          </li>
+        </ol>
+      <p>
+         And based on user reviews I predicted three personas:
+      </p>
+      <ul>
+        <li>
+          The <b>hesitant novice</b> is not particularly experienced with fashion but wants to look more put together on a regular basis. Likely to spend the least amount of time and effort cataloguing their clothes. Doesn't tend to stray too far outside of their comfort zone fashion-wise. Community support and inspiration might be helpful.
+        </li>
+        <li>
+          The <b>minimalist organizer</b> has a set inventory of clothes they own and wants to map out several possible combinations of outfits. The capsule wardrobe is their best friend. Serial planner. Doesn't tend to buy new pieces unless they're 100% sure they'll wear them often. Probably money-concious when it comes to buying clothes.
+        </li>
+        <li>
+          The <b>experienced fashionista</b> knows what they like and dislike and wants to be suggested something fresh and new every day. In tune with what's trending. More of a risk-taker. Confident and opinionated. Doesn't wear the same outfit twice in a month. Plans what they'll wear to a formal event weeks in advance.
+        </li>
+      </ul>
+      <h4>Functional Specifications and Content Requirements</h4>
+      <p>
+        Existing Features
+      </p>
+      <ol>
+        <li>
+          <b>Wardrobe</b> - a view of all logged clothing items, controls to add/filter/sort items
+        </li>
+        <li>
+          <b>Outfits</b> - a view of all logged outfit sets, controls to filter outfits and add new outfit sets either manually or through the generator
+        </li>
+        <li>
+          <b>My Profile</b> - basic account settings, calendar view for outfit planner, wardrobe insights and statistics, packing list for future trips
+        </li>
+        <li>
+          Discover - gallery of clothing items available for external purchase
+        </li>
+        <li>
+          Community - feed of outfit sets created and saved by other users
+        </li>
+      </ol>
+
+      <p>Ideas for Consideration & Areas of Improvement</p>
+        <ol>
+
+          <li>
+            <b>The layout of the features does not reflect typical user behavior.</b>
+            <p>
+              Users tended to be more interested in using the Outfits feature to generate and save sets of clothes rather than using the app as a digital catalog only. While users do have to use the Wardrobe tab to add individual clothing items, it is not the feature that most would interact with when first opening the app. I personally compared it to opening the Spotify app to see an alphabetized list of every album I ever saved. A home screen where both features were available would be more user-friendly and save a click for those who had needed to tab away from Wardrobe to get started.
+            </p>
+          </li>
+          <li>
+            <b>No organizational structure for the Wardrobe or Outfits tab.</b>
+            <p>
+              The two universal factors that influence users when choosing an outfit are <i>occasion</i> and <i>weather</i>, but all items are by default lumped together by type, and the virtual stylist doesn't allow the user to specify what kinds of outfits to generate. You are able to tag an outfit with <i>Winter</i> or <i>Work</i> after the fact, but frequent users who consistently need a certain type of outfit (like the <i>hesitant novice</i> and the <i>experienced fashionista</i>) would be unable to filter out irrelevant pieces. Jenny probably doesn't want to wear a heavy coat in the summer, nor does she want her hoodies and yoga pants to show up in her suggestions when she's trying to dress for work.
+            </p>
+          </li>
+          <li>
+            <b>Users note that cataloguing takes too much time.</b>
+            <p>
+              When I first used the app, each clothing item had to be manually inputted one-by-one. Furthermore, you had to scroll through a long list of tags to select before you could save the item and move on. Fortunately, they have since added the function to mass-add items from your photo gallery, and the built-in photo recognition software is able to suggest what kind of clothing item it is. Tagging can be done retroactively, but you have to tap into each item to do it. An improved tagging system which allows users to tag
+            </p>
+          </li>
+          <li>
+            Outfit generator ignores user preferences.
+          </li>
+          <li>
+            Branding is inconsistent, and the interface looks dated.
+          </li>
+        </ol>
+
+
+      <p>
+        I think after this i'm good to move on to the third tier
+        virtual stylist
+      </p>
+    </div>
+
+    <!--footer nav-->
+    <div class="footer">
+      <nav class="nav justify-content-center">
+        <a class="nav-link" href="index.html">All</a>
+        <a class="nav-link" href="atlanta-symphony.html">Atlanta Symphony Orchestra</a>
+        <a class="nav-link" href="delta.html">Delta Case Study</a>
+        <a class="nav-link" href="living-wage.html">Living Wage Calculator</a>
+        <a class="nav-link active" href="earth-day.html">GT Earth Day</a>
+        <a class="nav-link" href="carbon-emissions.html">Tracking Carbon Emissions</a>
+        <a class="nav-link" href="mood-meter.html">Mood Meter Infographic</a>
+      </nav>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
