@@ -14,115 +14,160 @@
   </head>
   <body>
     <!--navigation-->
-    <div class="container">
-      <nav class="navbar navbar-dark navbar-expand-lg">
-        <div>
-            <a class="navbar-brand" href="index.html">Rita Young</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuItems">
-          <ul class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="index.html">Work</a>
-              <a class="nav-item nav-link" href="resume.html">Resume</a>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top" id="navBar">
+      <div class="container">
+      <div>
+          <a class="navbar-brand" href="index.html">Rita Young</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Work</a>
+            <a class="nav-item nav-link" href="resume.html">Resume</a>
+        </ul>
+      </div>
+      </div>
+    </nav>
 
 		<!--project details-->
-		<div class="container">
-      <div class="embed-responsive embed-responsive-16by9">
-			<video class="embed-responsive-item" src="images/living-wage.mp4" autoplay loop>
-      </video>
+    <div class="container project-main">
+      <div class="item">
+        <h1 class="project-title">Living Wage Calculator</h1>
+        <h3 class="project-subtitle">Information Design</h3>
+      </div>
+      <div class="item">
+        <div class="embed-responsive embed-responsive-16by9">
+  			     <video class="embed-responsive-item" src="images/living-wage.mp4" autoplay loop></video>
+        </div>
+      </div>
+      <div class="item">
+      </div>
+      <div class="item main-gallery">
+        <div class="item">
+          <h6 class="header-specs">Duration</h6>
+          <p>1 week</p>
+        </div>
+        <div class="item">
+          <h6 class="header-specs">Skills</h6>
+          <ol>
+            <li>UX Analysis</li>
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+          </ol>
+        </div>
+        <div class="item">
+          <h6 class="header-specs">Tools</h6>
+          <p>Sketch<br />Principle</p>
+        </div>
+      </div>
+      <div class="item">
+        <h5>Introduction</h5>
+      </div>
+      <div class="item">
+        <p>
+          This was a personal exploration I did during one of my breaks from school to practice critiquing informational artifacts and using animation software. The calculator I studied can be found at <i><a href="http://livingwage.mit.edu">livingwage.mit.edu</a></i>. The site has since been updated -- the process below documents how the calculator looked as of winter 2018 along with my application of a different UI that perhaps offers a different solution based on a more focused review of key use cases.
+        </p>
+      </div>
+      <div class="item">
+        <h3>The Problem</h3>
+      </div>
+      <div class="item">
+        <img src="images/screenshot-1.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px;"/>
+        <h5>Low-contrast, underwhelming color palette</h5>
+           <p>
+             The site has a brown/tan/cream color palette that looks outdated and doesn't help to establish itself as an academic source. A cleaner, more cohesive design language can help achieve a more sophisticated and reputable look. Many banking, realty, and career sites have a combination of white and one bright accent color, and it looks much cleaner and more sophisticated than this muted color palette here.
+           </p>
+        <img src="images/screenshot-2.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px; margin-top: 40px;"/>
+        <h5>Choosing a location could be simplified</h5>
+           <p>
+             Instead of a series of overwhelming lists, a text field with an autocomplete function could simplify the search process. For casual users of the calculator in particular, filtering by a city does not need to be facilitated by two steps. Switching to a search box would offer a more streamlined experience.
+           </p>
+       <img src="images/screenshot-3.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block; margin-bottom: 20px; margin-top: 40px;"/>
+       <h5>Lack of visual hierarchy in results</h5>
+       <p>
+         The site presents results to the user in the form of a chart divided by family size. For users looking for a particular family size and situation, there's no need to include all family size options. Adding a selection to the calculation in the screen prior would eliminate the need for the user to scan the chart to find their result.
+       </p>
+      </div>
+      <div class="item">
+        <h3>Use Cases</h3>
+      </div>
+      <div class="item">
+        <ol>
+          <li>
+            <b>Calculating a current living situation</b>
+            <p>
+              Rebecca is looking for a job in Madison, Wisconsin and wants to know how much she has to make to support herself.
+            </p>
+          </li>
+          <li>
+            <b>Calculating a possible living situation</b>
+            <p>
+              Kimberly and her significant other live together in Glendale, Arizona. They are considering starting a family soon and want to make sure they are financially ready.
+            </p>
+          </li>
+          <li>
+            <b>Comparing a possible living situation with a current living situation</b>
+            <p>
+              Mariam is currently living in Raleigh, North Carolina and is considering moving to San Diego, California to be closer to family. She wants a general idea of how her cost of living will change.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div class="item">
+        <h3>Areas of Improvement</h3>
+      </div>
+      <div class="item">
+        <ul>
+          <li>
+            I updated the UI from muted browns to a cleaner theme of white and teal.
+          </li>
+          <li>
+            Instead of separating the location user input into  a text field and the list of links, I simplified it to a text field only. Scanning the alphabetized list of locations takes more time than using a text field with an autocomplete function.
+          </li>
+          <li>
+            Since most users won't need the results for all available family types, I added family size as a selector in the input screen to help emphasize the most relevant data.
+          </li>
+          <li>
+            Finally, I organized the results to reflect a sense of visual hierarchy and gave the user additional options to further personalize their results.
+          </li>
+        </ul>
+      </div>
+      <div class="item">
+        <h5>Conflicting Metrics</h5>
+      </div>
+      <div class="item">
+        <b>Clarity vs. Volume</b>
+        <p>
+          In some cases it would be useful to see the results for multiple living situations at once. However, for the purpose of a simple calculation, it would be clearer for the user to see one result rather than multiple results as a default. Adding a <i>Compare Results</i> feature separately may mitigate this issue.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Sketch Explorations</h3>
+      </div>
+      <div class="item">
+        <p style="text-align: center;"><i>For the purposes of this exercise I adapted Karol Ortyl's <a href="https://dribbble.com/shots/2761602-Calories-Calculator">split-screen design</a>.</i></p>
+        <img src="images/living-wage-sketches.JPG" style="width: 67%; margin-left: auto; margin-right: auto; display: block;"/>
+      </div>
+      <div class="item">
+        <h3>Final Result</h3>
+      </div>
+      <div class="item">
+        <img src="images/calculator-1.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block; border: 1px solid lightgrey;" />
+        <img src="images/calculator-2.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block; border: 1px solid lightgrey; margin-top: 10px;" />
+      </div>
     </div>
-		</div>
-		<div class="container">
-			<h2 class="project-title">Living Wage Calculator</h2>
-			<h4>Information Design</h4>
-			<p>This was a personal case study I did over the course of one week to practice critiquing informational artifacts and using animation software.</p>
-			<p>Tools Used: Sketch, Principle</p>
-      <i>This is a self-directed study of the living wage calculator found at <a href="http://livingwage.mit.edu">livingwage.mit.edu</a></i>
-      <h5>The Problem</h5>
-      <ol>
-        <li>
-          The UI is unappealing
-          <p>
-            The site has a brown/tan/cream color palette that looks outdated and doesn't help to establish itself as an academic source. A cleaner, more cohesive design language can help achieve a more sophisticated and reputable look. Many banking, realty, and career sites have a combination of white and one bright accent color, and it looks much cleaner and more sophisticated than this muted color palette here.
-          </p>
-          <img src="images/screenshot-1.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block;"/>
-        </li>
 
-        <li>
-          Choosing a location is unecessarily complicated
-          <p>
-            Instead of a series of lists, a text field with an autocomplete function would simplify the search process. Filtering by a city does not need to be separated by two steps, and the presence of a search box makes the list of choices redundant.
-          </p>
-          <img src="images/screenshot-2.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block;"/>
-        </li>
-        <li>
-          The results are unclear
-          <p>
-            The site presents results to the user in the form of a chart divided by family size. There's no need to include all family size options. Adding a selection to the calculation in the screen prior would eliminate the need for the user to scan the chart to find their result.
-          </p>
-          <img src="images/screenshot-3.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block;"/>
-        </li>
-      </ol>
-      <h5>Use Cases</h5>
-      <ol>
-        <li>
-          Calculating a current living situation
-          <p>
-            Rebecca is looking for a job in Madison, Wisconsin and wants to know how much she has to make to support herself.
-          </p>
-        </li>
-        <li>
-          Calculating a possible living situation
-          <p>
-            Kimberly and her significant other live together in Glendale, Arizona. They are considering starting a family soon and want to make sure they are financially ready.
-          </p>
-        </li>
-        <li>
-          Comparing a possible living situation with a current living situation
-          <p>
-            Mariam is currently living in Raleigh, North Carolina and is considering moving to San Diego, California to be closer to family. She wants a general idea of how her cost of living will change.
-          </p>
-        </li>
-      </ol>
-      <h5>Areas of Improvement</h5>
-      <ul>
-        <li>
-          I updated the UI from muted browns to a cleaner theme of white and teal.
-        </li>
-        <li>
-          Instead of separating the location user input into  a text field and the list of links, I simplified it to a text field only. Scanning the alphabetized list of locations takes more time than using a text field with an autocomplete function.
-        </li>
-        <li>
-          Since most users won't need the results for all available family types, I added family size as a selector in the input screen to help emphasize the most relevant data.
-        </li>
-        <li>
-          Finally, I organized the results to reflect a sense of visual hierarchy and gave the user additional options to further personalize their results.
-        </li>
-      </ul>
-      <h5>Conflicting Metrics</h5>
-      <h6>Clarity vs. Volume</h6>
-      <p>
-        In some cases it would be useful to see the results for multiple living situations at once. However, for the purpose of a simple calculation, it would be clearer for the user to see one result rather than multiple results as a default. Adding a <i>Compare Results</i> feature separately would mitigate this issue.
-      </p>
-      <h5>Sketch Explorations</h5>
-      <p style="text-align: center;"><i>For the purposes of this exercise I adapted Karol Ortyl's <a href="https://dribbble.com/shots/2761602-Calories-Calculator">split-screen design</a>.</i></p>
-      <img src="images/living-wage-sketches.JPG" style="width: 50%; margin-left: auto; margin-right: auto; display: block;"/>
-      <h5>Final Result</h5>
-      <img src="images/calculator-1.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block; border: 1px solid lightgrey;" />
-      <img src="images/calculator-2.png" style="width: 80%; margin-left: auto; margin-right: auto; display: block; border: 1px solid lightgrey; margin-top: 10px;" />
-    </div>
+
 
 
     <!--footer nav-->
-    <nav class="navbar navbar-dark navbar-expand-lg justify-content-center footer-nav">
+    <nav class="navbar navbar-light navbar-expand-lg justify-content-center footer-nav">
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="index.html">All</a>
+        <a class="nav-item nav-link" href="tydi.html">Tydi</a>
+        <a class="nav-item nav-link" href="pureple.html">Pureple</a>
         <a class="nav-item nav-link" href="delta.html">Delta Case Study</a>
         <a class="nav-item nav-link active" href="living-wage.html">Living Wage Calculator</a>
         <a class="nav-item nav-link" href="carbon-emissions.html">Tracking Carbon Emissions</a>
@@ -136,5 +181,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="scripts/navbar-shadow.js"></script>
   </body>
 </html>

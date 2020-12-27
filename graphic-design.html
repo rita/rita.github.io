@@ -13,52 +13,239 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <link href="images/logo.png" rel="icon" type="image/gif">
     <title>Rita Young</title>
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: Verdana, sans-serif; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active-dot, .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+</style>
   </head>
   <body>
     <!--navigation-->
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top" id="navBar">
+      <div class="container">
+      <div>
+          <a class="navbar-brand" href="index.html">Rita Young</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Work</a>
+            <a class="nav-item nav-link" href="resume.html">Resume</a>
+        </ul>
+      </div>
+      </div>
+    </nav>
+
     <div class="container">
-      <nav class="navbar navbar-dark navbar-expand-lg">
-        <div>
-            <a class="navbar-brand" href="index.html">Rita Young</a>
+      <img class="gd-sample" src="images/graphic-design_1.png" />
+      <h3>Mood Meter Infographic</h3>
+      <p class="gd-blurb">
+        I created this data visualization as part of a major project in my Principles of Information Design class. Full documentation of my work process can be found <a class="para-link" href="docs/process-book-2/process-book-2.pdf" target="_blank">here</a>.
+      </p>
+      <img class="gd-sample" src="images/graphic-design_2.png" />
+      <h3>eVestment LinkedIn Ad</h3>
+      <p class="gd-blurb">
+        This is an example of a digital graphic I created for a LinkedIn ad campaign that showcases the platform interface.
+      </p>
+      <div class="row">
+        <div class="col-sm">
+          <img class="gd-sample" src="images/graphic-design_3-1.png" />
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuItems">
-          <ul class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="index.html">Work</a>
-              <a class="nav-item nav-link" href="resume.html">Resume</a>
-          </ul>
+        <div class="col-sm">
+          <img class="gd-sample" src="images/graphic-design_3-2.png" />
         </div>
-      </nav>
+      </div>
+      <h3>Hackathon T-Shirt + Mug</h3>
+      <p class="gd-blurb">
+        During my marketing internship I was asked to design a T-shirt commemorating the annual company hackathon. The following year I was contracted as a freelancer to design a mug that would be sent to all participants for a virtual version of the hackathon.
+      </p>
     </div>
 
-    <div class="container-fluid graphic-design-gallery" >
-      <div class="item gd-item1">
-        <a class="image-link" href="images/gd1.png"><img class="img-fluid" src="images/gd1.png"/></a>
-      </div>
-      <div class="item gd-item2">
-        <a class="image-link" href="images/gd2.png"><img class="img-fluid" src="images/gd2.png"/></a>
-      </div>
-      <div class="item gd-item3">
-        <a class="image-link" href="images/gd3.png"><img class="img-fluid" src="images/gd3.png"/></a>
-      </div>
-      <div class="item gd-item4">
-        <a class="image-link" href="images/gd4.png"><img class="img-fluid" src="images/gd4.png"/></a>
-      </div>
-      <div class="item gd-item5">
-        <a class="image-link" href="images/gd5.png"><img class="img-fluid" src="images/gd5.png"/></a>
-      </div>
-      <div class="item gd-item6">
-        <a class="image-link" href="images/gd6.png"><img class="img-fluid" src="images/gd6.png"/></a>
-      </div>
+    <div class="slideshow-container">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 9</div>
+      <img src="images/PM-Whitepaper/1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 9</div>
+      <img src="images/PM-Whitepaper/2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 9</div>
+      <img src="images/PM-Whitepaper/3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 9</div>
+      <img src="images/PM-Whitepaper/4.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 9</div>
+      <img src="images/PM-Whitepaper/5.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 9</div>
+      <img src="images/PM-Whitepaper/6.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 9</div>
+      <img src="images/PM-Whitepaper/7.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 9</div>
+      <img src="images/PM-Whitepaper/8.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 9</div>
+      <img src="images/PM-Whitepaper/9.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <div class="container">
+      <h3>Achieving Cruising Altitude</h3>
+      <p class="gd-blurb">
+        I worked with the Private Markets team to design this whitepaper during the final semester of my marketing internship.
+      </p>
+      <img class="gd-sample" src="images/graphic-design_5.png" />
+      <h3>The OPEN Re-branding</h3>
+      <p class="gd-blurb">
+        The OPEN is an affinity group for LGBTQ+ employees of eVestment and NASDAQ. I was initially asked to create the brand identity for the eVestment chapter of the group and was later invited to present the visual concept to NASDAQ members as well. My design was adopted for the re-brand in August 2019.
+      </p>
+      <img class="gd-sample" src="images/graphic-design_6.png" />
+      <h3>Earth Day T-Shirt</h3>
+      <p class="gd-blurb">
+        This was my entry in the annual Georgia Tech Earth Day T-Shirt design contest. It was selected as the 2019 contest winner of the $500 cash prize.
+      </p>
     </div>
 
 
     <!--footer nav-->
-    <nav class="navbar navbar-dark navbar-expand-lg justify-content-center footer-nav">
+    <nav class="navbar navbar-light navbar-expand-lg justify-content-center footer-nav">
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="index.html">All</a>
+        <a class="nav-item nav-link" href="tydi.html">Tydi</a>
+        <a class="nav-item nav-link" href="pureple.html">Pureple</a>
         <a class="nav-item nav-link" href="delta.html">Delta Case Study</a>
         <a class="nav-item nav-link" href="living-wage.html">Living Wage Calculator</a>
         <a class="nav-item nav-link" href="carbon-emissions.html">Tracking Carbon Emissions</a>
@@ -73,11 +260,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="scripts/jquery.magnific-popup.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $('.image-link').magnificPopup({type:'image'});
-      });
+    <script src="scripts/navbar-shadow.js"></script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
 
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active-dot";
+      }
     </script>
   </body>
 </html>

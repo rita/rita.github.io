@@ -14,80 +14,188 @@
   </head>
   <body>
     <!--navigation-->
-    <div class="container">
-      <nav class="navbar navbar-dark navbar-expand-lg">
-        <div>
-            <a class="navbar-brand" href="index.html">Rita Young</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="menuItems">
-          <ul class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="index.html">Work</a>
-              <a class="nav-item nav-link" href="resume.html">Resume</a>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <nav class="navbar navbar-light navbar-expand-lg sticky-top" id="navBar">
+      <div class="container">
+      <div>
+          <a class="navbar-brand" href="index.html">Rita Young</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuItems">
+        <ul class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="index.html">Work</a>
+            <a class="nav-item nav-link" href="resume.html">Resume</a>
+        </ul>
+      </div>
+      </div>
+    </nav>
 
 		<!--project details-->
-		<div class="container">
+    <div class="container project-main">
+      <div class="item">
+        <h1 class="project-title">Delta Boarding Pass</h1>
+        <h3 class="project-subtitle">Case Study</h3>
+      </div>
+      <div class="item">
 			<img src="images/pre3.png" style="width:100%"/>
-		</div>
-
-		<div class="container">
-			<h2 class="project-title">Delta Boarding Pass</h2>
-			<h5>Case Study</h4>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="card col-lg-4">
-          <div class="card-body">
-            <h4 class="card-title details">Duration</h4>
-            <p class="card-text details">3 weeks</p>
-          </div>
-        </div>
-        <div class="card col-lg-4">
-          <div class="card-body">
-            <h4 class="card-title details">Skills</h4>
-            <p class="card-text details">
-            <ol>
-              <li>UX Analysis</li>
-              <li>Prototyping</li>
-              <li>Visual Design</li>
-            </ol>
-            </p>
-          </div>
-        </div>
-        <div class="card col-lg-4">
-          <div class="card-body">
-            <h4 class="card-title details">Tools</h4>
-            <p class="card-text details">Adobe Illustrator</p>
-          </div>
-        </div>
       </div>
     </div>
 
-    <div class="container">
-			<p>This was my first assignment for my Principles of Information Design class in which we were asked to examine a informational artifact. I chose to research and re-design the Delta boarding pass. <a href="docs/process-book-1.pdf" target="_blank">Process Book PDF</a></p>
-      <img src="docs/process-book-1/process-book-1-01.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-02.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-03.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-04.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-05.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-06.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-07.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-08.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-09.jpg" style="width:100%"/>
-      <img src="docs/process-book-1/process-book-1-10.jpg" style="width:100%"/>
-		</div>
+    <div class="container project-main">
+      <div class="item">
+      </div>
+      <div class="item main-gallery">
+        <div class="item">
+          <h6 class="header-specs">Duration</h6>
+          <p>4 weeks</p>
+        </div>
+        <div class="item">
+          <h6 class="header-specs">Skills</h6>
+          <ol>
+            <li>UX Analysis</li>
+            <li>Wireframing</li>
+            <li>Visual Design</li>
+            <li>Prototyping</li>
+          </ol>
+        </div>
+        <div class="item">
+          <h6 class="header-specs">Tools</h6>
+          <p>Adobe Illustrator</p>
+        </div>
+      </div>
+      <div class="item">
+        <h3>Introduction</h3>
+      </div>
+      <div class="item">
+        <p>
+          After observing different boarding passes for various airlines, we noticed that many of them were difficult to navigate in terms of finding information relevant to the user. The lack of data hierarchy and underdeveloped design language made standard boarding passes unappealing, so we took on the challenge of creating an artifact that would reflect the sequential process of boarding an airplane as well as provide an attractive and clear way to present information to the user. We started by creating user personas and generating ideas based on the needs of the primary users.
+        </p>
+      </div>
+      <div class="item">
+        <h3>User Personas</h3>
+      </div>
+      <div class="item">
+        <div class="container project-main">
+          <div class="item">
+            <img src="images/delta-persona-1.png" />
+          </div>
+          <div class="item">
+            <h5>Keith, age 36</h5>
+            <h6>The Passenger</h6>
+            <p>
+              <i>Keith is a businessman from Atlanta and travels a lot for work. Every time he needs to fly out for a meeting or conference he receives a printed boarding pass for his flight.</i>
+            </p>
+            <p>
+              Out of the three personas we chose, the passenger spends the most time looking at and using the boarding pass. They need the information about their flight to be clear and easy to read. The information that is most important to them are the gate number (although this may change), the boarding time, the zone or group for boarding, the departure time, and the seat number, so these pieces of information need to be clearly labeled, legible, and organized in a way that makes it easy for the passenger to find what they need at a glance. Using a grid may help in this case, as well as having a clear hierarchy between the information and its label. A potential challenge could arise if the information that the passenger needs is unlabeled or in a typeface that is not easily read, or if the information is organized in a way that does not make sense considering the boarding process (e.g. the seat number is bigger than the gate number, which the passenger is more concerned with when they first arrive at the airport).
+            </p>
+          </div>
+          <div class="item">
+            <img src="images/delta-persona-2.png" />
+          </div>
+          <div class="item">
+            <h5>Leslie, age 29</h5>
+            <h6>The Airline Official</h6>
+            <p>
+              <i>Leslie is a Delta employee who works at Hartsfield-Jackson Atlanta airport. She verifies the information on each passenger's boarding pass and scans their ticket before they board the plane.</i>
+            </p>
+            <p>
+              The airline employee who verifies the airline, flight number, and the name of the passenger needs to have these pieces of information easy to spot, especially when they have to verify dozens of passengers for every flight. This information would ideally be concentrated in one part of the ticket so that the employee does not have to look all over the ticket to find the information they need. The barcode should also be in a place that is easy to scan but does not get in the way of the organization of the relevant information that the passenger needs to see. A potential challenge could be the employee having to look in multiple places to verify the passenger, slowing down the boarding process.
+            </p>
+          </div>
+          <div class="item">
+            <img src="images/delta-persona-3.png" />
+          </div>
+          <div class="item">
+            <h5>Samual, age 38</h5>
+            <h6>The Flight Attendant</h6>
+            <p>
+              <i>Samual is a flight attendant originally from Salt Lake City and now works for Delta Airlines. He greets passengers as they board the airplane and helps them find their seats.</i>
+            </p>
+            <p>
+              Flight attendants like Samual aren’t concerned with as much information on the ticket, since it has already been scanned and verified by the employee at the gate. Samual only needs to see the class and seat number for passengers who need help finding their seat on the plane. This information could be in a corner of the boarding pass so it’s easily visible at a glance. A potential challenge could arise if this information is not easily distinguishable or if it’s hard to locate on the ticket.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3>Preliminary Sketches</h3>
+      </div>
+      <div class="item">
+        <div class="ce-examples">
+          <div class="item">
+            <p>
+              As a group we decided that our boarding pass redesign should have the following content:
+            </p>
+            <ul>
+              <li>Delta name and logo</li>
+              <li>Passenger name</li>
+              <li>Flight number</li>
+              <li>City of origin</li>
+              <li>City of destination</li>
+              <li>Gate number</li>
+              <li>Boarding zone/group</li>
+              <li>Seat number</li>
+              <li>Departure time and date</li>
+              <li>Barcode</li>
+            </ul>
+            <p>
+              We also agreed on a small set of content of secondary importance:
+            </p>
+            <ul>
+              <li>Time of boarding and doors closing</li>
+              <li>Passenger classification (coach, economy, etc)</li>
+            </ul>
+          </div>
+          <div class="item">
+            <img src="images/delta-sketches.png" />
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3>Refined Sketches</h3>
+      </div>
+      <div class="item">
+        <div class="ce-examples">
+          <div class="item">
+            <p>
+              We chose five concepts with the most potential and recreated them digitally. We also included a rough mockup of what the ticket stub would look like for each concept. The fourth concept received the most favorable response from in-class critique.
+            </p>
+          </div>
+          <div class="item">
+            <img src="images/delta-mockups.png" />
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <h3>Polishing</h3>
+      </div>
+      <div class="item">
+        <p>
+          As we finalized the design concept we experimented with different fonts, font weights, and colors. This included further research into the branding of Delta to ensure that the final design would be consistent with the corporate image.
+        </p>
+        <img src="images/delta-polished.png" />
+      </div>
+      <div class="item">
+        <h3>Final Design</h3>
+      </div>
+      <div class="item">
+        <p>
+          Because the black background was too heavy visually, we opted for Delta blue on the bottom panel and grey on the top banner. The final font is Whitney, the same font Delta uses on their branding.
+        </p>
+        <img src="images/delta-final.png" />
+      </div>
+    </div>
+
+
+
 
     <!--footer nav-->
-    <nav class="navbar navbar-dark navbar-expand-lg justify-content-center footer-nav">
+    <nav class="navbar navbar-light navbar-expand-lg justify-content-center footer-nav">
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="index.html">All</a>
+        <a class="nav-item nav-link" href="tydi.html">Tydi</a>
+        <a class="nav-item nav-link" href="pureple.html">Pureple</a>
         <a class="nav-item nav-link active" href="delta.html">Delta Case Study</a>
         <a class="nav-item nav-link" href="living-wage.html">Living Wage Calculator</a>
         <a class="nav-item nav-link" href="carbon-emissions.html">Tracking Carbon Emissions</a>
@@ -100,5 +208,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="scripts/navbar-shadow.js"></script>
   </body>
 </html>
